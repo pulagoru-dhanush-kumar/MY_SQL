@@ -1,0 +1,4 @@
+create database <database-name>;
+drop database <data-basename>;
+use <database-name>;
+show tables;
