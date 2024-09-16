@@ -1,0 +1,37 @@
+The datatypes are
+1.Numerical:
+Integer(INT)
+SMALLINT--stores 1 to 6 digit values(It can handle 4 blocks of memory)
+BIGINT-- used to store large amonts of data
+Decimal
+FLOAT/DOUBLE
+
+2.String 
+VARCHAR(N)--we can ocuupy storage Lessthan or n equal number characters
+CHAR(n)--we need to store n charcaters exactly....we cannot store less n number of charcaters(fixedlength)
+TEXT/BLOB--used to store Large length of string
+
+
+3.Time and date
+DATE :year(YYYY)-month(MM)-date(DD)
+DATETIME:year(YYYY)-month(MM)-date(DD)-hour(HH):minute(MM):seconds(s)
+Timestamp: Stores both date and time in the format YYYY-MM-DD HH:MM:SS, range: '1000-01-01 00:00:00' to '9999-12-31 23:59:59'
+
+4.Other datatypes
+BOOLEAN 
+ENUM:use to restrict colum values with a predefined set of options. --example enum (orderstatus:"pending",a'shipped","canceled") either one of the them
+set:similar to enum but allows selecting multiple options from a predefined set--here we take combination of values i.e more than one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
