@@ -1,0 +1,8 @@
+DML
+
+INSERT --- Insert into <table name>(column1,column 2,..column n) values(value1,value2,value2) //for single insertion
+       ---Insert into <table name>(column1,column 2,..column n) values(value1,value2,value2), (value1,value2,value2) ,(value1,value2,value2)  ;//multiple rowns insertion
+       ----Insert into <table-name> values(value1,value2,value3)//with out values template for single row
+       ---Insert into <table-name) values (value1,value2,value3),(value1,value2,value3)// with out values template insert multiple rows
+       --- insert into <table name> (column1,column2,column3..) select (column1,column2,column3..) from <table name> where [condition];//insert data from another table 
+
