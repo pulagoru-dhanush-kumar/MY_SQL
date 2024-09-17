@@ -1,0 +1,3 @@
+select command
+select <column name>,<column name2> ....or *
+from <table name>
