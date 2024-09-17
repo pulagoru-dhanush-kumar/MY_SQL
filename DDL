@@ -1,0 +1,31 @@
+DDL
+CREATE:
+Creating tables--create table<table name> (<column name> <data type> <constraint>)
+By using alter keyword we can update the db structure of different operations as follows :
+
+ALTER:
+1.adding column  for only one column-----  Alter table <tablename>  ADD< column-name> <data type>; 
+2adding  multiple columns ---- Alter table <tablename> ADD(< column-name> <data type>,< column-name> <data type>,< column-name> <data type>);
+3.drop column ----alter table <tablename> drop column <column name>;
+4.change data type --Alter table <table name> modify column <Column name> <new datatype>;
+5.ADD constraints--- alter table <table name> ADD constraint<constraint name> primaery key(column1,column2...column n);
+6.drop constraints-- alter table <table name> drop constraint<constraint name>;
+
+describe<table name>/desc<table name>--to see the description of table structure 
+
+
+DROP:
+Its a powerful tool to perform deletion operation in database 
+Functionalities of drop
+1.drop table
+2.drop index
+3.drop view
+
+Droping a table --  DROP table <table>
+
+
+
+
+
+
+
