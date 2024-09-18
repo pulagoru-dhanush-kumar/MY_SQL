@@ -22,13 +22,15 @@ HAVING:-  1.Having clause is used to apply filter on result of group by based on
            group by clause.
 
 Nested query/nested sub query :-Inner Query runs first and only once .Outer Query is executed with the result from Inner Query.
-This follows (Bottom Up Approach). IN , NOT IN key words are  used in this nested Query.
+This follows (Bottom Up Approach). IN , NOT IN ,ANY,ALL key words are  used in this nested Query.
 Example :-Select* from table where salary=(select max(salary) from the table)
 
 Correlated subQuery:-Outer Query exists first and  for every outer Query Inner query is executed .This follows 
-(Top Down Approach).Exists key word and etc key words are used.
+(Top Down Approach).Exists,NOT Exists  keywords are used in correlated nested query.
 Example :-select * from employee exists (select emp_id from project where employee.empid=project.emp_id)
 
+IN/NOT IN :- this  works on group of values /tuple  
+EXISTS/NOT EXISTS:-applied on correlated quries.
 
 
 
@@ -40,6 +42,4 @@ Example :-select * from employee exists (select emp_id from project where employ
 
 
 
-
-
-
+/
