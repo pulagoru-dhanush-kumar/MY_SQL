@@ -33,6 +33,17 @@ IN/NOT IN :- this  works on group of values /tuple
 EXISTS/NOT EXISTS:-applied on correlated quries.
 
 
+PATTERN MATCHING(LIKE,NOT LIKE):
+1.start with a - <column name> like "a%" or REGEXP '^A'
+2.ends with a - <column name> like "%a" or REGEXP 'e$'
+3.starts with a and ends with e- <column name> like "a%e"
+4.doesnot start with a - <column name> not like "a%" 
+5.doest ends with a - <column name> not like "%a" or REGEXP 'e$'
+6.starts with a and ends with e- <column name> not like "a%e"
+
+
+
+
 
 
 
