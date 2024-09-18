@@ -1,0 +1,9 @@
+In-- works on multiple values(tuple )i.e works on touple         (In -nested queries)
+exists- return true or false ..every row is compared with every row in another table based on where condition..if it returns any value exists return true otherwise false.  (exists-correlated subqueries)
+Joins=Crossproduct+condition
+1.Natural join
+2.corss join
+3.condtional join
+4.equi join
+5.self join
+6.outer join-left,right,full
