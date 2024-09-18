@@ -1,0 +1,2 @@
+To find length of string we use :-  length(<columnname>);
+we can use operators at select statemnt :- select count(city)-count(distinct(city)) from student
