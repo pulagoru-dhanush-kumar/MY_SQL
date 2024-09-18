@@ -2,3 +2,15 @@ create database <database-name>;
 drop database <data-basename>;
 use <database-name>;
 show tables;
+
+
+Execution flow of MYSQL
+Summary of SQL Query Execution Order:
+1.FROM (including JOINs)
+2.WHERE
+3.GROUP BY
+4.HAVING
+5.SELECT
+6.DISTINCT
+7.ORDER BY
+8.LIMIT / OFFSET;
