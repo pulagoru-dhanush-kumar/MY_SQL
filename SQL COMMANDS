@@ -3,9 +3,8 @@ drop database <data-basename>;
 use <database-name>;
 show tables;
 
-
 Execution flow of MYSQL
-Summary of SQL Query Execution Order:
+Summary of SQL Query Execution Order:-
 1.FROM (including joins)
 2.WHERE (filtering)
 3.GROUP BY (grouping)
@@ -14,3 +13,33 @@ Summary of SQL Query Execution Order:
 6.DISTINCT (removing duplicates)
 7.ORDER BY (sorting)
 8.LIMIT / OFFSET (pagination)
+
+GROUPBY:- 1.Group by statement groups rows that have the same values into summary rows.
+          2.Manadatory to use with agregate functions sum(),avg(),min(),max(),distinct().
+
+HAVING:-  1.Having clause is used to apply filter on result of group by based on sepcific condition.
+          2.Where clause places condition on selected columns where as having clause places condition on groups created by
+           group by clause.
+
+Nested query/nested sub query :-Inner Query runs first and only once .Outer Query is executed with the result from Inner Query.
+This follows (Bottom Up Approach). IN , NOT IN key words are  used in this nested Query.
+Example :-Select* from table where salary=(select max(salary) from the table)
+
+Correlated subQuery:-Outer Query exists first and  for every outer Query Inner query is executed .This follows 
+(Top Down Approach).Exists key word and etc key words are used.
+Example :-select * from employee exists (select emp_id from project where employee.empid=project.emp_id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
