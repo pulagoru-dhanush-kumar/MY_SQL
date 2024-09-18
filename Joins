@@ -2,8 +2,55 @@ In-- works on multiple values(tuple )i.e works on touple         (In -nested que
 exists- return true or false ..every row is compared with every row in another table based on where condition..if it returns any value exists return true otherwise false.  (exists-correlated subqueries)
 Joins=Crossproduct+condition
 1.Natural join
-2.corss join
+2.cross join
 3.condtional join
 4.equi join
 5.self join
 6.outer join-left,right,full
+
+Cross product will be happen when we use any type of join and then it will retrive records based up on wherecondition.
+when we do cross product  (TOtal number of rows) = No.of rows in one table*number of rows in another table.
+cross product example :-
+select d.id as departmentid ,e.id,d.department_name,e.name
+from employee e,department d
+
+1.Natural join(key word):
+Example :
+select d.id as departmentid ,e.id,d.department_name,e.name 
+from employee e natural join department d;
+
+select d.id as departmentid ,e.id,d.department_name,e.name 
+from employee e, department d
+where e.id=d.id
+output :-
+1	1	HR	John Doe
+2	2	Finance	Jane Smith
+3	3	IT	Alice Johnson
+4	4	Sales	Bob Brown
+//Internally natural join doing where e.id=d.id i.e checks equality on common attributes
+
+2.Self join:
+select e1.id,e1.name
+from employee as e1 ,employee as e2
+where e1.department_id= e2.department_id and e1.id<>e2.id ; This is called self join it is applied on same table 
+with different alias names of the table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
