@@ -1,2 +1,12 @@
-To find length of string we use :-  length(<columnname>);
-we can use operators at select statemnt :- select count(city)-count(distinct(city)) from student
+1.To find length of string we use :-  length(<columnname>);
+2.we can use operators at select statemnt :- select count(city)-count(distinct(city)) from student
+3.if we want to get only n charcters from a string in mysql we use SUBSTRING(<columnname>,LENGTH(<column name> - x,n) 
+where x accepts only  2 values either 1 or 2 ,If 1 it gives n letters  form starting position ,if 2 means gives last n characters.
+
+
+
+
+
+
+
+/
