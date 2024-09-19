@@ -43,6 +43,28 @@ PATTERN MATCHING(LIKE,NOT LIKE):
 
 
 
+Syntax for CASE ... END AS:
+The CASE statement in SQL is used to implement conditional logic. Here’s the general syntax for using CASE in a SELECT query, 
+including the use of END AS to name the resulting column
+SELECT 
+    column1,
+    column2,
+    CASE 
+        WHEN condition1 THEN result1
+        WHEN condition2 THEN result2
+        -- additional conditions as needed
+        ELSE default_result
+    END AS alias_name
+FROM table_name;
+
+SELECT: Specifies the columns to retrieve.
+column1, column2: Other columns you want to include in the result set.
+CASE: Begins the conditional logic block.
+WHEN condition THEN result: Defines conditions and the result to return if that condition is met.
+ELSE default_result: (Optional) Provides a default result if none of the WHEN conditions are true.
+END: Marks the end of the CASE block.
+AS alias_name: Assigns a name (alias) to the result of the CASE statement.
+This name will be used as the column header in the output.
 
 
 
