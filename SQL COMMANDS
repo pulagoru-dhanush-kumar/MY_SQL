@@ -56,7 +56,7 @@ SELECT
         ELSE default_result
     END AS alias_name
 FROM table_name;
-
+//from above we can exclude column names also
 SELECT: Specifies the columns to retrieve.
 column1, column2: Other columns you want to include in the result set.
 CASE: Begins the conditional logic block.
