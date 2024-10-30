@@ -21,7 +21,7 @@ Functionalities of drop
 2.drop index
 3.drop view
 
-Droping a table --  DROP table <table>
+Droping a table --  DROP table <table>  
 
 
 
